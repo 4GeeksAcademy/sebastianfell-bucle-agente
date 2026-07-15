@@ -1,0 +1,25 @@
+actor,message,tool_call,timestamp
+agent,Sesión iniciada,system,2026-07-15T21:31:27.280209+00:00
+user,Muéstrame todos los productos,,2026-07-15T21:36:20.489969+00:00
+agent,Enviando mensaje al LLM (llama3-70b-8192)...,llm_call,2026-07-15T21:36:20.490255+00:00
+tool,"Error al conectar con el LLM: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}",llm_error,2026-07-15T21:36:20.981513+00:00
+agent,Sesión interrumpida por el usuario (Ctrl+C).,system,2026-07-15T21:39:01.291838+00:00
+agent,Sesión iniciada,system,2026-07-15T21:39:46.222207+00:00
+user,muestrame todos los productos,,2026-07-15T21:40:18.743121+00:00
+agent,Enviando mensaje al LLM (llama-3.3-70b-versatile)...,llm_call,2026-07-15T21:40:18.746025+00:00
+agent,Llamando a la herramienta 'listar_productos' con args: {},listar_productos,2026-07-15T21:40:19.483823+00:00
+tool,📦 **Productos en inventario:**   🔹 **Leche de avena** (ID: 1) — 50.0 unidades | Mín: 10.0 unidades | Categoría: Lácteos   🔹 **Leche entera** (ID: 2) — 40.0 unidades | Mín: 10.0 unidades | Categoría: Lácteos   🔹 **Café arábica molido** (ID: 3) — 20.0 kg | Mín: 5.0 kg | Categoría: Café   🔹 **Café robusta grano** (ID: 4) — 15.0 kg | Mín: 5.0 kg | Categoría: Café   🔹 **Azúcar blanco** (ID: 5) — 30.0 kg | Mín: 8.0 kg | Categoría: Azúcares   🔹 **Azúcar moreno** (ID: 6) — 25.0 kg | Mín: 8.0 kg | Categoría: Azúcares   🔹 **Vasos de cartón 250ml** (ID: 7) — 200.0 unidades | Mín: 50.0 unidades | Categoría: Desechables   🔹 **Vasos de cartón 400ml** (ID: 8) — 150.0 unidades | Mín: 50.0 unidades | Categoría: Desechables   🔹 **Tapas para vasos** (ID: 9) — 300.0 unidades | Mín: 100.0 unidades | Categoría: Desechables   🔹 **Harina de trigo** (ID: 10) — 20.0 kg | Mín: 5.0 kg | Categoría: Repostería   🔹 **Cacao en polvo** (ID: 11) — 10.0 kg | Mín: 3.0 kg | Categoría: Repostería   🔹 **Canela molida** (ID: 12) — 5.0 kg | Mín: 2.0 kg | Categoría: Especias   🔹 **Jengibre molido** (ID: 13) — 3.0 kg | Mín: 1.0 kg | Categoría: Especias   🔹 **Chocolate para taza** (ID: 14) — 15.0 kg | Mín: 5.0 kg | Categoría: Repostería   🔹 **Galletas de mantequilla** (ID: 15) — 40.0 paquetes | Mín: 10.0 paquetes | Categoría: Snacks,listar_productos,2026-07-15T21:40:19.493704+00:00
+agent,Enviando mensaje al LLM (llama-3.3-70b-versatile)...,llm_call,2026-07-15T21:40:19.494098+00:00
+agent,Aquí tienes la lista de todos los productos que tenemos en el inventario. ¿Necesitas algo en particular o quieres saber más sobre algún producto? Estoy aquí para ayudarte. 📦,,2026-07-15T21:40:19.963114+00:00
+user,Vendimos 5 kg de café arábica molido,,2026-07-15T21:41:43.564707+00:00
+agent,Enviando mensaje al LLM (llama-3.3-70b-versatile)...,llm_call,2026-07-15T21:41:43.565386+00:00
+agent,"Llamando a la herramienta 'registrar_salida' con args: {'delta': 5, 'product_id': 3}",registrar_salida,2026-07-15T21:41:44.366127+00:00
+tool,✅ **Salida registrada.**    Producto: Café arábica molido    Nuevo stock: 15.0 kg    Se quitaron 5 kg.,registrar_salida,2026-07-15T21:41:44.370398+00:00
+agent,Enviando mensaje al LLM (llama-3.3-70b-versatile)...,llm_call,2026-07-15T21:41:44.370555+00:00
+agent,"Genial, la venta de 5 kg de café arábica molido ha sido registrada. El stock actual del producto es de 15 kg. ¿Hay algo más con lo que pueda ayudarte? 📊",,2026-07-15T21:41:45.339235+00:00
+user,Cuánta leche entera tenemos?,,2026-07-15T21:41:55.636405+00:00
+agent,Enviando mensaje al LLM (llama-3.3-70b-versatile)...,llm_call,2026-07-15T21:41:55.636855+00:00
+agent,Llamando a la herramienta 'obtener_producto' con args: {'product_id': 2},obtener_producto,2026-07-15T21:41:56.363355+00:00
+tool,📦 **Leche entera** (ID: 2)    Cantidad: 40.0 unidades    Stock mínimo: 10.0 unidades    Categoría: Lácteos,obtener_producto,2026-07-15T21:41:56.368388+00:00
+agent,Enviando mensaje al LLM (llama-3.3-70b-versatile)...,llm_call,2026-07-15T21:41:56.368645+00:00
+agent,Tenemos 40.0 unidades de leche entera en stock. ¿Necesitas saber algo más sobre este producto o quizás otra cosa? Estoy aquí para ayudarte. 🐮,,2026-07-15T21:41:56.979465+00:00

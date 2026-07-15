@@ -1,0 +1,16 @@
+id,name,quantity,unit,min_stock,category
+1,Leche de avena,50.0,unidades,10,Lácteos
+2,Leche entera,40,unidades,10,Lácteos
+3,Café arábica molido,15.0,kg,5,Café
+4,Café robusta grano,15,kg,5,Café
+5,Azúcar blanco,30,kg,8,Azúcares
+6,Azúcar moreno,25,kg,8,Azúcares
+7,Vasos de cartón 250ml,200,unidades,50,Desechables
+8,Vasos de cartón 400ml,150,unidades,50,Desechables
+9,Tapas para vasos,300,unidades,100,Desechables
+10,Harina de trigo,20,kg,5,Repostería
+11,Cacao en polvo,10,kg,3,Repostería
+12,Canela molida,5,kg,2,Especias
+13,Jengibre molido,3,kg,1,Especias
+14,Chocolate para taza,15,kg,5,Repostería
+15,Galletas de mantequilla,40,paquetes,10,Snacks

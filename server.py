@@ -1,3 +1,8 @@
+"""
+Este archivo no se usa en este proyecto.
+Mira main.py o agent.py para el punto de entrada.
+"""
+
 try:
     # try to import flask, or return error if has not been installed
     from flask import Flask
@@ -33,5 +38,3 @@ def serve_any_other_file(path):
     response = send_from_directory(static_file_dir, path)
     response.cache_control.max_age = 0 # avoid cache memory
     return response
-
-app.run(host='0.0.0.0',port=3000, debug=True, extra_files=['./',])
